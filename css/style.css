@@ -67,6 +67,8 @@ h1 {
 .wrapper {
 	display: flex;
 	justify-content: center;
+	position: relative;
+	overflow-x: hidden;
 	background: #fff url(../images/site_bg.jpg) no-repeat 50% 0;
 	background-size: cover;
 }
