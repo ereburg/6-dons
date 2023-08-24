@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	outline: none;
+}
+
+html {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #101010;
+	line-height: 180%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+figure,
+footer,
+main {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #101010;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 70px;
+	line-height: 100%;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 10px;
+}
+
+.mobile_on {
+	display: none;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	background: #fff url(../images/site_bg.jpg) no-repeat 50% 0;
+	background-size: cover;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/* header section */
+
+.header_section {
+	padding: 20px 0 0;
+}
+
+.logo {
+	display: flex;
+	max-width: 160px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+/* end header section */
+
+/* banner section */
+
+.banner_section {
+	max-width: 400px;
+	min-height: calc(100vh - 101px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 100px 0;
+}
+
+.mobile_bg {
+	display: none;
+}
+
+.banner_section img {
+	display: block;
+	margin: 2px 0 0 52px;
+}
+
+.banner_section p {
+	max-width: 370px;
+}
+
+.contacnts_box {
+	width: 540px;
+	height: 147px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	left: -133px;
+	margin-top: 45px;
+	background: url(../images/contacts_bg.svg) no-repeat 50% 50%;
+	background-size: 100% auto;
+}
+
+.contacnts_box a {
+	display: inline-flex;
+	font-weight: 400;
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	line-height: 160%;
+	text-transform: uppercase;
+	padding-left: 25%;
+}
+
+.contacnts_box a:hover {
+	color: #727272;
+}
+
+/* end banner section */
+
+/* footer section */
+
+.footer_section {
+	padding: 0 0 20px;
+}
+
+/* end footer section */
+
+/* adaptive styles */
+
+@media screen and (max-width: 1240px) {
+
+	.container {
+		max-width: calc(100% - 40px);
+		margin: 0 20px;
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+
+	
+
+}
+
+@media screen and (max-width: 991px) {
+
+	.banner_section p {
+		max-width: 250px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.mobile_on {
+		display: inline;
+	}
+
+	.mobile_off {
+		display: none;
+	}
+
+	.header_section {
+		display: none;
+	}
+
+	.mobile_bg {
+		width: calc(100% + 40px);
+		display: block;
+		margin: 0 -20px;
+	}
+
+	.mobile_bg img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.banner_section img {
+		margin: 0;
+	}
+
+	.wrapper {
+		background: none;
+	}
+
+	.banner_section {
+		height: auto;
+		max-width: 100%;
+		align-items: center;
+		padding: 0 0 70px;
+	}
+
+	.banner_section_info {
+		width: 100%;
+		max-width: 500px;
+		text-align: center;
+	}
+
+	.banner_section img {
+		display: inline;
+	}
+
+	.banner_section p {
+		max-width: 360px;
+	}
+
+	.contacnts_box {
+		width: 466px;
+		height: 127px;
+		left: 0;
+		margin-top: 30px;
+	}
+
+	.contacnts_box a {
+		font-size: 24px;
+	}
+
+	.banner_section_info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 10px;
+	}
+
+	.banner_section_info h1 {
+		
+	}
+
+	.banner_section_info .logo {
+		max-width: 100%;
+		margin: 0 auto 7px;
+	}
+
+	.banner_section_info .logo img {
+		width: 236px;
+	}
+
+	.banner_section_info .mobile_on span {
+		letter-spacing: 4px;
+	}
+	
+	.copyrights {
+		text-align: center;
+		line-height: 140%;
+	}
+
+}
+
+/* end adaptive styles */
