@@ -89,7 +89,7 @@ h1 {
 
 .logo {
 	display: flex;
-	max-width: 160px;
+	max-width: 236px;
 }
 
 .logo img {
@@ -270,7 +270,7 @@ h1 {
 	}
 
 	.banner_section_info .logo img {
-		width: 236px;
+		width: 230px;
 	}
 
 	.banner_section_info .mobile_on span {
