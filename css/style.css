@@ -133,6 +133,7 @@ h1 {
 	text-transform: uppercase;
 	position: relative;
 	left: -133px;
+	padding-left: 33%;
 	margin-top: 45px;
 	background: url(../images/contacts_bg.svg) no-repeat 50% 50%;
 	background-size: 100% auto;
@@ -146,7 +147,7 @@ h1 {
 	color: #fff;
 	line-height: 160%;
 	text-transform: uppercase;
-	padding-left: 25%;
+	
 }
 
 .contacnts_box a:hover {
@@ -245,7 +246,9 @@ h1 {
 	.contacnts_box {
 		width: 466px;
 		height: 127px;
+		align-items: center;
 		left: 0;
+		padding: 0 10%;
 		margin-top: 30px;
 	}
 
